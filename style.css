@@ -14,7 +14,7 @@ html,body{margin:0;padding:0;background:var(--bg);color:#000;font-family:Inter,u
 
 /* ===== Header slim & nav ===== */
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--rule)}
-.head{display:flex;flex-direction:column;align-items:center;gap:0;padding:4px 6px 4px}
+.head{display:flex;flex-direction:column;align-items:center;gap:-2;padding:4px 6px 4px}
 .logo{max-height:110px;width:auto;display:block;margin:0 auto 8px auto} /* gap mic sub logo */
 
 /* Meniu pe o singură linie + swipe pe mobil */
