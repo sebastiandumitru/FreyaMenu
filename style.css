@@ -1,4 +1,4 @@
-/* ====== Freya & Friends — STYLE (slim header + mobile tweaks) ====== */
+/* ====== Freya & Friends — STYLE (compact header) ====== */
 :root{
   --bg:#ffffff;
   --ink:#1c1410;
@@ -9,54 +9,24 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:#000;font-family:Inter,ui-sans-serif,system-ui,Arial}
 
-/* Layout container */
 .container{max-width:900px;margin:0 auto;padding:12px}
 
-/* ===== Header slim & nav ===== */
+/* ===== Header ultra-slim & nav ===== */
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--rule)}
-.head{display:flex;flex-direction:column;align-items:center;gap:0px;padding:4px 6px 4px}
-.logo{max-height:110px;width:auto;display:block;margin:0 auto 8px auto} /* gap mic sub logo */
+.head{display:flex;flex-direction:column;align-items:center;gap:2px;padding:2px 4px}
+.logo{max-height:90px;width:auto;display:block;margin:0 auto 4px auto}
 
-/* Meniu pe o singură linie + swipe pe mobil */
-.tabs{
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  white-space:nowrap;
-  overflow-x:auto;
-  padding:0;
-  margin:0;
-  -webkit-overflow-scrolling: touch;
-}
+/* Meniu */
+.tabs{display:flex;justify-content:center;gap:16px;white-space:nowrap;overflow-x:auto;padding:0;margin:0;-webkit-overflow-scrolling:touch}
 .tabs::-webkit-scrollbar{display:none}
-
-.tab{
-  color:#000;
-  text-decoration:none;
-  font-weight:700;
-  letter-spacing:.02em;
-  border-bottom:2px solid transparent;
-  padding:6px 8px;
-  font-size:16px; /* desktop slim */
-  white-space:nowrap; /* previne wrap */
-}
+.tab{color:#000;text-decoration:none;font-weight:700;letter-spacing:.02em;border-bottom:2px solid transparent;padding:6px 8px;font-size:16px;white-space:nowrap}
 .tab:hover{opacity:.85}
 
 /* ===== Section & items ===== */
-.section{padding:26px 0;text-align:center;scroll-margin-top:90px} /* fallback pentru scroll */
-.section-title{
-  font-family:'Playfair Display',serif;
-  font-size:22px;
-  color:var(--accent);
-  margin:0 0 16px;
-  letter-spacing:.08em;
-}
+.section{padding:26px 0;text-align:center;scroll-margin-top:90px}
+.section-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--accent);margin:0 0 16px;letter-spacing:.08em}
 .menu-col{display:flex;flex-direction:column;gap:14px;align-items:center}
-.entry{
-  max-width:640px;width:100%;
-  margin:0 auto;padding:6px 0;
-  border-bottom:1px solid var(--rule);
-}
+.entry{max-width:640px;width:100%;margin:0 auto;padding:6px 0;border-bottom:1px solid var(--rule)}
 .entry:last-child{border-bottom:none}
 .name{margin:0;font-size:18px;letter-spacing:.01em}
 .details{margin:4px auto 6px;color:#5a453c;font-size:14px;line-height:1.5;max-width:70ch;padding:0 6px}
@@ -73,8 +43,8 @@ html,body{margin:0;padding:0;background:var(--bg);color:#000;font-family:Inter,u
 /* ===== Mobile tweaks ===== */
 @media (max-width: 768px){
   .container{padding:10px}
-  .logo{max-height:90px;margin-bottom:6px}
-  .tab{font-size:15px;padding:6px 6px}
+  .logo{max-height:80px;margin-bottom:2px}
+  .tab{font-size:15px;padding:5px 6px}
   .tabs{justify-content:flex-start}
   .section{padding:22px 0;scroll-margin-top:80px}
   .section-title{font-size:20px;margin-bottom:12px}
@@ -84,9 +54,9 @@ html,body{margin:0;padding:0;background:var(--bg);color:#000;font-family:Inter,u
 }
 
 @media (max-width: 390px){
-  .logo{max-height:84px}
+  .logo{max-height:74px}
   .tab{font-size:14px}
   .name{font-size:16px}
   .details,.gramaj{font-size:13px}
-  .section{scroll-margin-top:76px}
+  .section{scroll-margin-top:72px}
 }
