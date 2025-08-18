@@ -1,0 +1,29 @@
+:root{
+  --bg:#ffffff;
+  --ink:#1c1410;
+  --accent:#BA481B; /* RAL 2001 */
+  --rule:#eee7de;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,Arial}
+.container{max-width:860px;margin:0 auto;padding:22px}
+.logo{display:block;margin:16px auto;max-height:120px;width:auto}
+.nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid var(--rule)}
+.nav-link{font-weight:700;letter-spacing:.04em;color:var(--ink);text-decoration:none;padding:8px 2px;border-bottom:2px solid transparent}
+.nav-link:hover{color:var(--accent)}
+.nav-link.active{border-color:var(--accent)}
+
+.section{padding:46px 0;text-align:center}
+.section-title{font-family:'Playfair Display',serif;font-size:26px;color:var(--accent);margin:0 0 28px;letter-spacing:.12em}
+
+.menu-col{display:flex;flex-direction:column;gap:18px;align-items:center}
+.entry{max-width:640px;margin:0 auto;padding:8px 0;border-bottom:1px solid var(--rule)}
+.entry:last-child{border-bottom:none}
+.name{margin:0;font-size:20px;letter-spacing:.02em}
+.details{margin:6px auto 8px;color:#5a453c;font-size:14px;line-height:1.55;max-width:60ch}
+.price{font-weight:800;font-size:18px;margin:2px 0 0}
+
+.footnote{color:#7b5a4f;font-size:13px;margin-top:4px}
+
+.site-footer{border-top:1px solid var(--rule);background:#faf7f4;padding:14px 0;text-align:center;font-size:12px;color:#7b5a4f}
+.copy{margin:4px 0 0}
