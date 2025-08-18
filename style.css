@@ -1,1 +1,45 @@
-body{font-family:sans-serif;} h1{color:#a34;}
+:root{
+  --bg:#ffffff;
+  --ink:#1c1410;
+  --accent:#BA481B;
+  --rule:#eee7de;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:#000;font-family:Inter,ui-sans-serif,system-ui,Arial}
+.container{max-width:900px;margin:0 auto;padding:12px}
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--rule)}
+.head{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 6px}
+.logo{max-height:88px;width:auto;display:block;margin:0 auto 4px auto}
+.tabs{display:flex;justify-content:center;gap:10px;white-space:nowrap;overflow-x:auto;padding:0;margin:0;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
+.tab{color:#000;text-decoration:none;font-weight:700;letter-spacing:.02em;border-bottom:2px solid transparent;padding:6px 8px;font-size:16px;white-space:nowrap}
+.tab:hover{opacity:.85}
+.section{padding:24px 0;text-align:center;scroll-margin-top:88px}
+.section-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--accent);margin:0 0 14px;letter-spacing:.08em}
+.menu-col{display:flex;flex-direction:column;gap:12px;align-items:center}
+.entry{max-width:640px;width:100%;margin:0 auto;padding:6px 0;border-bottom:1px solid var(--rule)}
+.entry:last-child{border-bottom:none}
+.name{margin:0;font-size:18px;letter-spacing:.01em}
+.details{margin:4px auto 6px;color:#5a453c;font-size:14px;line-height:1.5;max-width:70ch;padding:0 6px}
+.gramaj{margin:2px auto 6px;color:#5a453c;font-size:14px}
+.price{font-weight:800;font-size:17px;margin:2px 0 0}
+.al{font-size:.7em;vertical-align:super;line-height:0}
+.legend{margin:12px auto 0;color:#7b5a4f;font-size:12px;text-align:center}
+.site-footer{border-top:1px solid var(--rule);background:#faf7f4;padding:12px 0;text-align:center;font-size:12px;color:#7b5a4f}
+.copy{margin:4px 0 0}
+@media (max-width: 768px){
+  .container{padding:10px}
+  .logo{max-height:52px;margin-bottom:0}
+  .tabs{justify-content:flex-start;gap:6px}
+  .tab{font-size:13.5px;padding:2px 6px}
+  .section{padding:18px 0;scroll-margin-top:64px}
+  .section-title{font-size:19px;margin-bottom:10px}
+  .name{font-size:17px}
+  .details,.gramaj{font-size:13.5px;line-height:1.45}
+  .entry{padding:6px 0}
+}
+@media (max-width: 360px){
+  .logo{max-height:46px}
+  .tab{font-size:12.5px;padding:2px 5px}
+  .section{scroll-margin-top:58px}
+}
