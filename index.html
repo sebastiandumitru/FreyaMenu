@@ -5,125 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Freya & Friends — Meniu</title>
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Meniul Freya & Friends: cafea, băuturi și brunch.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>html{scroll-behavior:smooth}</style>
 </head>
 <body>
 <header class="site-header">
-  <div class="container">
-    <img src="logo.png" class="logo" alt="Freya & Friends">
-    <nav class="nav" aria-label="Categorii">
-      <a class="nav-link" href="#cafea">Cafea</a>
-      <a class="nav-link" href="#non">Non‑alcoolice</a>
-      <a class="nav-link" href="#alc">Alcoolice</a>
-      <a class="nav-link" href="#brunch">Brunch</a>
+  <div class="container head">
+    <img src="logo.png" alt="Freya & Friends" class="logo">
+    <nav class="tabs" aria-label="Categorii">
+      <a href="#coffee" class="tab">Coffee</a>
+      <a href="#cocktails" class="tab">Cocktails</a>
+      <a href="#draught" class="tab">Draught</a>
+      <a href="#non" class="tab">Non‑Alcoolice</a>
+      <a href="#brunch" class="tab">Brunch</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <!-- Cafea -->
-  <section id="cafea" class="section">
+
+  <!-- COFFEE -->
+  <section id="coffee" class="section">
     <h2 class="section-title">COFFEE</h2>
     <div class="menu-col">
-      <div class="entry">
-        <h3 class="name">Espresso</h3>
-        <p class="details">40 ml • single origin</p>
-        <div class="price">12 lei</div>
-      </div>
-      <div class="entry"><h3 class="name">Americano</h3><p class="details">200 ml</p><div class="price">12 lei</div></div>
-      <div class="entry"><h3 class="name">Macchiato</h3><p class="details">60 ml</p><div class="price">12 lei</div></div>
-      <div class="entry"><h3 class="name">Cortado</h3><p class="details">120 ml</p><div class="price">14 lei</div></div>
-      <div class="entry"><h3 class="name">Cappuccino</h3><p class="details">200 ml</p><div class="price">15 lei</div></div>
-      <div class="entry"><h3 class="name">Flat White</h3><p class="details">250 ml</p><div class="price">16 lei</div></div>
-      <div class="entry"><h3 class="name">Latte</h3><p class="details">300 ml • siropuri (+2 lei)</p><div class="price">16 lei</div></div>
-      <div class="entry"><h3 class="name">Iced Latte</h3><p class="details">300 ml</p><div class="price">17 lei</div></div>
-      <p class="footnote">Lapte vegetal (+3 lei): ovăz / migdală</p>
+      <div class="entry"><h3 class="name">Espresso</h3><p class="details">40ml</p><div class="price">12lei</div></div>
+      <div class="entry"><h3 class="name">Americano</h3><p class="details">120ml</p><div class="price">12lei</div></div>
+      <div class="entry"><h3 class="name">Macchiato <sup class="al">¹</sup></h3><p class="details">70ml</p><div class="price">13lei</div></div>
+      <div class="entry"><h3 class="name">Cortado <sup class="al">¹</sup></h3><p class="details">80ml</p><div class="price">15lei</div></div>
+      <div class="entry"><h3 class="name">Cappucino <sup class="al">¹</sup></h3><p class="details">150ml</p><div class="price">14lei</div></div>
+      <div class="entry"><h3 class="name">Flat White <sup class="al">¹</sup></h3><p class="details">200ml</p><div class="price">16lei</div></div>
+      <div class="entry"><h3 class="name">Latte <sup class="al">¹</sup></h3><p class="details">280ml</p><div class="price">17lei</div></div>
+      <div class="entry"><h3 class="name">Iced Latte <sup class="al">¹</sup></h3><p class="details">300ml</p><div class="price">19lei</div></div>
+
+      <div class="entry spacer"></div>
+
+      <div class="entry"><h3 class="name">Extra Shot</h3><div class="price">3lei</div></div>
+      <div class="entry"><h3 class="name">Lapte vegetal <sup class="al">²</sup></h3><div class="price">3lei</div></div>
+
+      <div class="entry spacer"></div>
+
+      <div class="entry"><h3 class="name">Cold Brew</h3><p class="details">200ml</p><div class="price">20lei</div></div>
+      <div class="entry"><h3 class="name">Cold Brew Tonic</h3><p class="details">220ml</p><div class="price">22lei</div></div>
+
+      <div class="entry spacer"></div>
+
+      <div class="entry"><h3 class="name">Matcha Latte <sup class="al">¹</sup></h3><p class="details">280ml</p><div class="price">25lei</div></div>
+      <div class="entry"><h3 class="name">Iced Latte Matcha <sup class="al">¹</sup></h3><p class="details">300ml</p><div class="price">25lei</div></div>
+      <div class="entry"><h3 class="name">Raspberry Matcha Latte <sup class="al">¹</sup></h3><p class="details">220ml</p><div class="price">30lei</div></div>
+      <div class="entry"><h3 class="name">Mango Matcha Latte <sup class="al">¹</sup></h3><p class="details">220ml</p><div class="price">30lei</div></div>
+
+      <div class="legend">¹ conține lapte • ² conține gluten</div>
     </div>
   </section>
 
-  <!-- Non alcoolice -->
+  <!-- COCKTAILS -->
+  
+  <section id="cocktails" class="section">
+    <h2 class="section-title">COCKTAILS</h2>
+    <div class="menu-col">
+<div class="entry"><h3 class="name">Amaretto Sour</h3><p class="details">amaretto, lămâie, sirop zahăr</p><p class="gramaj">100ml</p><div class="price">37lei</div></div>
+<div class="entry"><h3 class="name">Spicy Mango Margarita</h3><p class="details">tequila, cointreau, lime, piure mango, agave, sos iute</p><p class="gramaj">120ml</p><div class="price">37lei</div></div>
+<div class="entry"><h3 class="name">Gin &amp; Tonic</h3><p class="details">choose your gin</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Aperol Spritz</h3><p class="details">aperol, prosecco, apă minerală</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Apple &amp; Nuts Spritz <sup class='al'>³</sup></h3><p class="details">LeBirlou, prosecco, apă minerală</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Bergamot Spritz</h3><p class="details">lichior bergamotă, prosecco, apă minerală</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Cuba Libre</h3><p class="details">rom, kola, lime</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Negroni</h3><p class="details">gin, bitter, vermouth</p><p class="gramaj">120ml</p><div class="price">37lei</div></div>
+<div class="entry"><h3 class="name">Coconut Negroni</h3><p class="gramaj">120ml</p><div class="price">37lei</div></div>
+
+    </div>
+  </section>
+
+
+  <!-- DRAUGHT -->
+  <section id="draught" class="section">
+    <h2 class="section-title">DRAUGHT</h2>
+    <div class="menu-col">
+      <div class="entry"><h3 class="name">Czech Lager Beer</h3><p class="details">400ml</p><div class="price">19lei</div></div>
+      <div class="entry"><h3 class="name">New England IPA Beer</h3><p class="details">400ml</p><div class="price">22lei</div></div>
+      <div class="entry"><h3 class="name">Kola Artizanal</h3><p class="details">400ml</p><div class="price">17lei</div></div>
+      <div class="entry"><h3 class="name">Tonic Water</h3><p class="details">400ml</p><div class="price">17lei</div></div>
+    </div>
+  </section>
+
+  <!-- NON-ALCOOLICE -->
+  
   <section id="non" class="section">
     <h2 class="section-title">NON‑ALCOOLICE</h2>
     <div class="menu-col">
-      <div class="entry"><h3 class="name">Limonadă</h3><p class="details">350 ml • clasică / mentă</p><div class="price">15 lei</div></div>
-      <div class="entry"><h3 class="name">Ceaiuri</h3><p class="details">300 ml • infuzii</p><div class="price">12 lei</div></div>
-      <div class="entry"><h3 class="name">Ciocolată caldă</h3><p class="details">250 ml</p><div class="price">16 lei</div></div>
-      <div class="entry"><h3 class="name">Apă plată / minerală</h3><p class="details">500 ml</p><div class="price">8 lei</div></div>
+<div class="entry"><h3 class="name">Limoncello Spritz 0%</h3><p class="details">limoncello 0%, prosecco 0%, apă minerală</p><p class="gramaj">250ml</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Passion Fruit Lemonade</h3><p class="details">lămâie, piure fructul pasiunii, apă minerală</p><p class="gramaj">400ml</p><div class="price">23lei</div></div>
+<div class="entry"><h3 class="name">Mango Lemonade</h3><p class="details">lămâie, piure mango, apă minerală</p><p class="gramaj">400ml</p><div class="price">23lei</div></div>
+<div class="entry"><h3 class="name">Papaya Smoothie</h3><p class="details">suc de mere, papaya, ananas, mango</p><p class="gramaj">300ml</p><div class="price">23lei</div></div>
+<div class="entry"><h3 class="name">Green Green Smoothie</h3><p class="details">suc de mere, kale, banane, mango, lemongrass</p><p class="gramaj">300ml</p><div class="price">23lei</div></div>
+
     </div>
   </section>
 
-  <!-- Alcoolice -->
-  <section id="alc" class="section">
-    <h2 class="section-title">ALCOOLICE</h2>
-    <div class="menu-col">
-      <div class="entry"><h3 class="name">Aperol Spritz</h3><p class="details">300 ml</p><div class="price">26 lei</div></div>
-      <div class="entry"><h3 class="name">Gin &amp; Tonic</h3><p class="details">300 ml</p><div class="price">28 lei</div></div>
-      <div class="entry"><h3 class="name">Vin la pahar</h3><p class="details">150 ml</p><div class="price">22 lei</div></div>
-      <div class="entry"><h3 class="name">Bere artizanală</h3><p class="details">330 ml</p><div class="price">18 lei</div></div>
-    </div>
-  </section>
 
-  <!-- Brunch -->
+  <!-- BRUNCH -->
+  
   <section id="brunch" class="section">
     <h2 class="section-title">BRUNCH</h2>
     <div class="menu-col">
-      <div class="entry">
-        <h3 class="name">Toast Egg Me Up</h3>
-        <p class="details">200 gr • avocado, Grana Padano, rucola, roșii, lime, busuioc, baby spanac, usturoi, muguri de pin, muștar Dijon, miere, mix semințe, ouă, piper, sare Maldon, pâine, ulei de măsline, valeriană, ceapă roșie, oțet de mere, tarhon uscat, frunze de dafin</p>
-        <div class="price">44 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Toast Feta Affair</h3>
-        <p class="details">220 gr • ciuperci, feta de capră, gălbenuș, unt 82%, lime, sos soia, mix semințe, tabasco, ulei, cimbru, sare Maldon, piper, pâine</p>
-        <div class="price">44 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Toast Peach Perfect</h3>
-        <p class="details">170 gr • burrata, piersici, prosciutto crudo, rucola, zahăr brun, usturoi, Grana Padano, miere, busuioc, piper, muguri de pin, pâine, ulei de măsline, Tabasco, alune de pădure, valeriană</p>
-        <div class="price">44 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Toast The Royal</h3>
-        <p class="details">220 gr • cremă de brânză, somon afumat, unt 82%, capere, lămâie, ierburi aromatice, piper, sare Maldon, pâine</p>
-        <div class="price">44 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Hummus Crunch Me Softly</h3>
-        <p class="details">năut, usturoi, conopidă, vânătă, zucchini, cartofi, ulei de floarea-soarelui, lămâie, ulei de măsline, ceapă roșie, baby spanac, Tabasco, miere, mix semințe, lime, zahăr brun, tahini, sare, piper, muștar Dijon, frunze de dafin, tarhon uscat, pâine, oțet de mere</p>
-        <div class="price">38 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Sandwich Cheesy Business</h3>
-        <p class="details">280 gr • ciuperci, cheddar, ceapă roșie, cremă de brânză, emmentaler, usturoi, unt 82%, sos soia, zahăr brun, cimbru, sare Maldon, piper, pâine, bere Lager, smântână de gătit</p>
-        <div class="price">37 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Sandwich Greek Freak</h3>
-        <p class="details">280 gr • halloumi, măsline, vânătă, zucchini, ulei de măsline, lămâie, iaurt, ulei de floarea-soarelui, mentă, sare, piper, pâine</p>
-        <div class="price">37 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Sandwich Nuts About Crudo</h3>
-        <p class="details">280 gr • burrata, prosciutto crudo, Grana Padano, roșii, rucola, busuioc, alune de pădure, muguri de pin, sare Maldon, piper, pâine</p>
-        <div class="price">35 lei</div>
-      </div>
-
-      <div class="entry">
-        <h3 class="name">Sandwich Kiss My Cotto</h3>
-        <p class="details">280 gr • prosciutto cotto, emmentaler, cremă de brânză, baby spanac, roșii, usturoi, sare, piper, sare Maldon, pâine</p>
-        <div class="price">35 lei</div>
-      </div>
+<div class="entry"><h3 class="name">Toast Egg Me Up <sup class='al'>¹</sup><sup class='al'>²</sup><sup class='al'>³</sup></h3><p class="details">avocado, Grana Padano, rucola, roșii, lime, busuioc, baby spanac, usturoi, muguri de pin, muștar Dijon, miere, mix semințe, ouă, piper, sare Maldon, pâine, ulei de măsline, valeriană, ceapă roșie, oțet de mere, tarhon uscat, frunze de dafin</p><p class="gramaj">200gr</p><div class="price">44lei</div></div>
+<div class="entry"><h3 class="name">Toast Feta Affair <sup class='al'>¹</sup><sup class='al'>²</sup></h3><p class="details">ciuperci, feta (capră + vacă), gălbenuș, unt 82%, lime, sos soia, mix semințe, tabasco, ulei, cimbru, sare Maldon, piper, pâine</p><p class="gramaj">220gr</p><div class="price">44lei</div></div>
+<div class="entry"><h3 class="name">Toast Peach Perfect <sup class='al'>¹</sup><sup class='al'>²</sup><sup class='al'>³</sup></h3><p class="details">burrata, piersici, prosciutto crudo, rucola, zahăr brun, usturoi, Grana Padano, miere, busuioc, piper, muguri de pin, pâine, ulei de măsline, Tabasco, alune de pădure, valeriană</p><p class="gramaj">170gr</p><div class="price">44lei</div></div>
+<div class="entry"><h3 class="name">Toast The Royal <sup class='al'>¹</sup><sup class='al'>²</sup></h3><p class="details">cremă de brânză, somon afumat, unt 82%, capere, lămâie, ierburi aromatice, piper, sare Maldon, pâine</p><p class="gramaj">220gr</p><div class="price">44lei</div></div>
+<div class="entry"><h3 class="name">Hummus Crunch Me Softly <sup class='al'>²</sup></h3><p class="details">năut, usturoi, conopidă, vânătă, zucchini, cartofi, ulei de floarea-soarelui, lămâie, ulei de măsline, ceapă roșie, baby spanac, Tabasco, miere, mix semințe, lime, zahăr brun, tahini, sare, piper, muștar Dijon, frunze de dafin, tarhon uscat, pâine, oțet de mere</p><div class="price">38lei</div></div>
+<div class="entry"><h3 class="name">Sandwich Cheesy Business <sup class='al'>¹</sup><sup class='al'>²</sup></h3><p class="details">ciuperci, cheddar, ceapă roșie, cremă de brânză, emmentaler, usturoi, unt 82%, sos soia, zahăr brun, cimbru, sare Maldon, piper, pâine, bere Lager, smântână de gătit</p><p class="gramaj">280gr</p><div class="price">37lei</div></div>
+<div class="entry"><h3 class="name">Sandwich Greek Freak <sup class='al'>¹</sup><sup class='al'>²</sup></h3><p class="details">halloumi, măsline, vânătă, zucchini, ulei de măsline, lămâie, iaurt, ulei de floarea-soarelui, mentă, sare, piper, pâine</p><p class="gramaj">280gr</p><div class="price">37lei</div></div>
+<div class="entry"><h3 class="name">Sandwich Nuts About Crudo <sup class='al'>¹</sup><sup class='al'>²</sup><sup class='al'>³</sup></h3><p class="details">burrata, prosciutto crudo, Grana Padano, roșii, rucola, busuioc, alune de pădure, muguri de pin, sare Maldon, piper, pâine</p><p class="gramaj">280gr</p><div class="price">35lei</div></div>
+<div class="entry"><h3 class="name">Sandwich Kiss My Cotto <sup class='al'>¹</sup><sup class='al'>²</sup></h3><p class="details">prosciutto cotto, emmentaler, cremă de brânză, baby spanac, roșii, usturoi, sare, piper, pâine</p><p class="gramaj">280gr</p><div class="price">35lei</div></div>
+<div class="legend">¹ conține lapte • ² conține gluten • ³ conține alune și nuci</div>
     </div>
   </section>
+
+
 </main>
 
 <footer class="site-footer">
